@@ -46,10 +46,10 @@ const Section5: React.FC = () => {
 
   return (
     <div className="w-full mx-auto px-5 lg:px-0">
-      <section className="pb-20">
+      <section className="pb-12">
         <div className="bg-gray-50">
           {/* Newsletter Section */}
-          <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+          <div className="hidden relative bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
             <div className="w-full h-full bg-black/20 absolute inset-0 z-20"></div>
             <div className="absolute inset-0">
               <Image

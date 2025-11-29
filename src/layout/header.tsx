@@ -374,7 +374,7 @@ const Header: React.FC<HeaderProps> = ({
               setOpen(true);
             }}
           >
-            <input type="checkbox" checked={open} onChange={() => {}} />
+            <input type="checkbox" checked={open} onChange={() => { }} />
             <svg viewBox="0 0 32 32">
               <path
                 className="line line-top-bottom"
@@ -389,148 +389,18 @@ const Header: React.FC<HeaderProps> = ({
             <Image
               src={IMAGES.LOGO}
               alt="In Ảnh Hạ Thu"
-              width={40}
-              height={40}
+              width={60}
+              height={60}
             />
-            <div className="flex flex-col justify-center items-start">
+            {/* <div className="flex flex-col justify-center items-start">
               <span className="text-sm lg:text-lg font-bold">
                 IN ẢNH HẠ THU
               </span>
               <span className="text-xs font-medium text-[rgb(var(--fifteenth-rgb))]">
                 In ảnh đẹp giá rẻ
               </span>
-            </div>
+            </div> */}
           </Link>
-
-          <nav className="hidden lg:flex items-center gap-8">
-            {navigationItems
-              .filter((item) => item.sideBar === false)
-              .map((item) => (
-                <div key={item.label} className="relative group">
-                  <Link
-                    href={item.href}
-                    className={`relative text-[16px] font-normal transition-colors duration-200 ${
-                      isActive(item)
-                        ? "text-[rgb(var(--fifteenth-rgb))] font-semibold border-b-2 border-[rgb(var(--fifteenth-rgb))] pb-1"
-                        : "text-black"
-                    } group-hover:text-[rgb(var(--fifteenth-rgb))] group-hover:font-semibold`}
-                  >
-                    {item.label}
-                    <span
-                      className={`absolute -bottom-1.5 left-0 h-[2px] bg-[rgb(var(--fifteenth-rgb))] transition-all duration-300 ease-in-out ${
-                        isActive(item) ? "w-0" : "w-0 group-hover:w-full"
-                      }`}
-                    ></span>
-                  </Link>
-                </div>
-              ))}
-          </nav>
-
-          {/* Right side navigation */}
-          <div className="flex items-center lg:space-x-6">
-            {/* Login/Register */}
-            {logined ? (
-              <div className="hidden lg:flex">
-                <Dropdown>
-                  <DropdownTrigger>
-                    <Image
-                      src={
-                        storedAvatar || customerAccount?.avatar || IMAGES.LOGO
-                      }
-                      alt="avatar"
-                      width={1000}
-                      height={1000}
-                      className="w-10 h-10 object-cover rounded-full cursor-pointer"
-                    />
-                  </DropdownTrigger>
-
-                  <DropdownMenu
-                    className="bg-white rounded-md border border-gray-200"
-                    aria-label="Static Actions"
-                  >
-                    <DropdownItem
-                      className="px-3 py-2.5 text-left text-md hover:bg-gray-200 rounded-md"
-                      key="Quản lí hồ sơ"
-                    >
-                      <a
-                        href={`${ROUTES.ACCOUNT}`}
-                        className="flex items-center justify-start gap-3 text-gray-700 hover:text-black"
-                      >
-                        <UserRound size={18} /> Quản lí hồ sơ
-                      </a>
-                    </DropdownItem>
-
-                    <DropdownItem
-                      className="px-3 py-2.5 text-left text-md hover:bg-gray-200 rounded-md"
-                      key="Tạo đơn hàng mới"
-                    >
-                      <a
-                        href={`${ROUTES.CREATE_ORDER}?type=frame`}
-                        className="flex items-center justify-start gap-3 text-gray-700 hover:text-black"
-                      >
-                        <FolderPlus size={18} /> Tạo đơn hàng
-                      </a>
-                    </DropdownItem>
-                    <DropdownItem
-                      key="delete"
-                      className="text-[rgb(var(--fifteenth-rgb))] hover:text-white hover:bg-[rgb(var(--fifteenth-rgb))] font-medium rounded-lg text-md px-3 py-2.5 text-left dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
-                    >
-                      <button
-                        onClick={handleLogOut}
-                        className="flex items-center justify-start gap-3 hover:text-white"
-                      >
-                        <LogOut size={18} /> Đăng xuất
-                      </button>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </div>
-            ) : (
-              <div>
-                {/* <LoginForm onLogin={handleLogin} /> */}
-              </div>
-            )}
-
-            {/* <Link href={`${ROUTES.CREATE_ORDER}?type=frame`}>
-              <ShoppingBag
-                size={18}
-                strokeWidth={1.5}
-                className="hidden lg:flex cursor-pointer hover:text-[rgb(var(--fifteenth-rgb))]"
-              />
-            </Link> */}
-
-            {/* Divider */}
-            {/* <div className="hidden lg:flex h-5 w-px bg-gray-300"></div> */}
-
-            {/* Cart */}
-            {/* <Link
-              href={SOCIAL_LINKS.DOWNLOAD_IOS || SOCIAL_LINKS.DOWNLOAD_ANDROID}
-              target="_blank"
-              className="group relative flex flex-col lg:flex-row gap-1 lg:gap-2 justify-center items-center text-black hover:text-gray-900 transition-colors lg:pr-0"
-            >
-              <div className="flex flex-row items-center gap-2 ">
-                <Image
-                  src={IMAGES.APP_STORE}
-                  alt={IMAGES.APP_STORE}
-                  width={1000}
-                  height={1000}
-                  className={`w-[18px] h-[18px]`}
-                />
-                <Image
-                  src={IMAGES.GOOGLE_PLAY}
-                  alt={IMAGES.GOOGLE_PLAY}
-                  width={1000}
-                  height={1000}
-                  className={`w-[18px] h-[18px]`}
-                />
-              </div>
-              <span className="text-[16px] font-normal group-hover:text-[rgb(var(--fifteenth-rgb))]">
-                Tải app
-              </span>
-            </Link> */}
-
-            <AppDownloadLink />
-          </div>
         </div>
       </header>
 
@@ -582,11 +452,10 @@ const Header: React.FC<HeaderProps> = ({
                   <div key={item.label} className="relative group">
                     <Link
                       href={item.href}
-                      className={`relative text-[16px] font-normal transition-colors duration-200 ${
-                        isActive(item)
+                      className={`relative text-[16px] font-normal transition-colors duration-200 ${isActive(item)
                           ? "text-[rgb(var(--fifteenth-rgb))] font-semibold border-b-2 border-[rgb(var(--fifteenth-rgb))]"
                           : "text-black"
-                      } group-hover:text-[rgb(var(--fifteenth-rgb))] group-hover:font-semibold`}
+                        } group-hover:text-[rgb(var(--fifteenth-rgb))] group-hover:font-semibold`}
                     >
                       <div
                         className={`flex flex-row items-center gap-1 text-[16px] mb-3`}
@@ -597,11 +466,10 @@ const Header: React.FC<HeaderProps> = ({
                         <div className="relative">
                           {item.label}
                           <span
-                            className={`absolute -bottom-0.5 left-0 h-[2px] bg-[rgb(var(--fifteenth-rgb))] transition-all duration-300 ease-in-out ${
-                              isActive(item)
+                            className={`absolute -bottom-0.5 left-0 h-[2px] bg-[rgb(var(--fifteenth-rgb))] transition-all duration-300 ease-in-out ${isActive(item)
                                 ? "w-full"
                                 : "w-0 group-hover:w-full"
-                            }`}
+                              }`}
                           ></span>
                         </div>
                       </div>
@@ -610,7 +478,7 @@ const Header: React.FC<HeaderProps> = ({
                 ))}
             </div>
           </div>
-          <div className="w-full flex items-center justify-center">
+          {/* <div className="w-full flex items-center justify-center">
             {logined ? (
               <button
                 onClick={handleLogOut}
@@ -621,7 +489,7 @@ const Header: React.FC<HeaderProps> = ({
             ) : (
               <LoginFormMobile onLogin={handleLogin} />
             )}
-          </div>
+          </div> */}
         </div>
       )}
     </>

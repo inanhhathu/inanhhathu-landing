@@ -48,16 +48,16 @@ const Section2: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-5 lg:px-0">
-      <section className="py-20">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-0 py-0">
           <div className="text-center mb-12">
             <div className="relative z-20">
               <h1
                 className={`text-3xl font-bold text-gray-900 mb-2 z-20 relative`}
               >
-                <div
+                {/* <div
                   className={`absolute bottom-[8%] right-[7%] lg:right-[38%] h-2 w-36 bg-[rgb(var(--fifteenth-rgb))] opacity-45 !z-0`}
-                ></div>
+                ></div> */}
                 <span className="!z-20 relative">Sản Phẩm Bán Chạy</span>
               </h1>
             </div>
@@ -74,7 +74,7 @@ const Section2: React.FC = () => {
               <SkeletonHomeSection2 />
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {products.slice(0, 8).map((product) => (
                 <ProductCard key={product._id} product={product} />
               ))}

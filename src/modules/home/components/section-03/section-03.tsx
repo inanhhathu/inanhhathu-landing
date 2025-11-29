@@ -77,7 +77,7 @@ const PromoBanner: React.FC<PromoBannerProps> = ({
 const Banner1WithImages: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-0 py-0">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Left Banner - Interior Home Decor */}
         <div className="bg-white overflow-hidden">
           <div className="relative h-80">
@@ -125,12 +125,12 @@ const Section3: React.FC = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden lg:block max-w-7xl mx-auto px-5 lg:px-0 pb-20">
+      <div className="hidden lg:block max-w-7xl mx-auto px-5 lg:px-0 pb-12">
         <Banner1WithImages />
       </div>
 
       {/* Mobile version */}
-      <div className="lg:hidden max-w-7xl mx-auto px-0 lg:px-0 pb-20">
+      <div className="lg:hidden max-w-7xl mx-auto px-0 lg:px-0 pb-12">
         <Banner1WithImages />
       </div>
     </>

@@ -181,7 +181,7 @@ const Section1: React.FC = () => {
               </div>
 
               {/* Product Cards Sidebar - Takes 1/3 width */}
-              <div className="grid h-full lg:col-span-1 lg:grid-row-2 gap-[16px]">
+              {/* <div className="grid h-full lg:col-span-1 lg:grid-row-2 gap-[16px]">
                 <div
                   className={`flex relative p-8 h-[390px] lg:h-[400px] flex-col justify-between`}
                 >
@@ -208,7 +208,7 @@ const Section1: React.FC = () => {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

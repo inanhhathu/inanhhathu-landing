@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer
-        className="w-full pt-12 pb-7 flex justify-center items-center"
+        className="hidden w-full pt-12 pb-7 justify-center items-center"
         style={{ backgroundColor: "rgba(var(--primary-rgb), 0.65)" }}
       >
         <div className="max-w-7xl container !px-5 lg:!px-0 !mx-0">

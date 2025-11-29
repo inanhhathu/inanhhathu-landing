@@ -47,12 +47,29 @@ export default function Contact() {
         </Link>
       </div>
       <div className="relative flex items-center justify-center">
-        <div className="absolute inset-0 border border-gray-100 rounded-full animate-zoomFade z-20"></div>
+        <div className="absolute inset-0 border border-orange-100 rounded-full animate-zoomFade z-20"></div>
+        <div className="absolute inset-0 p-2 opacity-90 rounded-full animate-zoomIO z-0"></div>
+        <Link
+          href={SOCIAL_LINKS.SHOPPE}
+          target="_blank"
+          className="relative bg-orange-100 rounded-full p-2 z-20"
+        >
+          <Image
+            src={"https://tiemquatiko.com/wp-content/uploads/2022/08/shopee-circle-logo-design-shopping-bag-13.png"}
+            alt="Facebook icon"
+            width={1000}
+            height={1000}
+            className="w-7 h-7 rounded-full animate-bellRing"
+          />
+        </Link>
+      </div>
+      <div className="relative flex items-center justify-center">
+        <div className="absolute inset-0 border border-blue-100 rounded-full animate-zoomFade z-20"></div>
         <div className="absolute inset-0 p-2 opacity-90 rounded-full animate-zoomIO z-0"></div>
         <Link
           href={SOCIAL_LINKS.FACEBOOK}
           target="_blank"
-          className="relative bg-gray-100 rounded-full p-2 z-20"
+          className="relative bg-blue-100 rounded-full p-2 z-20"
         >
           <Image
             src={IMAGES.FACEBOOK}

@@ -170,7 +170,7 @@ const FurnitureSlider: React.FC = () => {
                   </h2>
 
                   {/* CTA Button */}
-                  <Link
+                  {/* <Link
                     href={`${ROUTES.PRODUCT}`}
                     className={`bg-[rgb(var(--fifteenth-rgb))] text-white px-8 py-3 rounded-md font-medium text-sm uppercase tracking-wide z-50 transition-all duration-1000 delay-700 hover:duration-100 hover:delay-100 hover:opacity-90 hover:scale-105 ${
                       index === currentSlide
@@ -179,7 +179,7 @@ const FurnitureSlider: React.FC = () => {
                     }`}
                   >
                     Đặt hàng ngay
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

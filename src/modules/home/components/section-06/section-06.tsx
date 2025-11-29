@@ -70,14 +70,14 @@ const Section6: React.FC<BlogCarouselProps> = (props) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-5 lg:px-0 mb-20">
+    <div className="max-w-7xl mx-auto px-5 lg:px-0 mb-12">
       <section>
         {/* Header */}
         <div className="text-center mb-12">
           <div className="relative z-20">
-            <div
+            {/* <div
               className={`absolute bottom-[8%] right-[11%] lg:right-[39%] h-2 w-36 bg-[rgb(var(--fifteenth-rgb))] opacity-45 z-10`}
-            ></div>
+            ></div> */}
             <h1
               className={`text-3xl font-bold text-gray-900 mb-2 z-20 relative`}
             >

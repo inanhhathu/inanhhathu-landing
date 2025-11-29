@@ -107,13 +107,13 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       {/* Product Info */}
       <div className="py-4 flex flex-row justify-between items-end">
         <div className="flex flex-col justify-between">
-          <h3 className="font-light text-gray-900 mb-1 text-[16px] lg:text-[16px] h-full line-clamp-1">
+          <h3 className="font-light text-gray-900 mb-1 text-[16px] lg:text-[16px] h-full line-clamp-2">
             {product.name}
           </h3>
-          <div className="flex text-[14px] font-light items-center mb-2">
+          {/* <div className="flex text-[14px] font-light items-center mb-2">
             {renderStars(Number(product.rating))} &nbsp;&nbsp;(
             {product.sold} đã bán)
-          </div>
+          </div> */}
           <div className="flex items-center space-x-2">
             <span className="text-[16px] lg:text-[18px] font-semibold text-gray-900">
               {HELPER.formatVND(
