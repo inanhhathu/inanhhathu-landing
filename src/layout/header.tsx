@@ -610,7 +610,7 @@ const Header: React.FC<HeaderProps> = ({
                 ))}
             </div>
           </div>
-          <div className="w-full flex items-center justify-center">
+          {/* <div className="w-full flex items-center justify-center">
             {logined ? (
               <button
                 onClick={handleLogOut}
@@ -621,7 +621,7 @@ const Header: React.FC<HeaderProps> = ({
             ) : (
               <LoginFormMobile onLogin={handleLogin} />
             )}
-          </div>
+          </div> */}
         </div>
       )}
     </>
