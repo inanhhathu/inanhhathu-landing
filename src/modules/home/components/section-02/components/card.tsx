@@ -48,8 +48,8 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
   return (
     <div
-      onClick={() => handleProductClick(product._id, product.name)}
-      className="cursor-pointer group relative bg-white overflow-hidden transition-all duration-300"
+      // onClick={() => handleProductClick(product._id, product.name)}
+      className="cursor-pointer group relative bg-white overflow-hidden transition-all duration-300 rounded-2xl"
     >
       {product?.discount !== "0" && (
         <div className="absolute top-4 left-4 z-10">
@@ -95,12 +95,12 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
               <Eye className="w-4 h-4 text-gray-600" />
             </button>
           </div> */}
-          <div className="absolute -bottom-16 group-hover:bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-500 ease-in-out">
+          {/* <div className="absolute -bottom-16 group-hover:bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-500 ease-in-out">
             <button className="w-full bg-[rgb(var(--primary-rgb))] text-gray-800 py-3 px-4 rounded font-medium hover:bg-[rgb(var(--fifteenth-rgb))] hover:text-[rgb(var(--primary-rgb))] transition-colors flex items-center justify-center space-x-2">
               <ShoppingCart className="w-4 h-4" />
               <span>Thêm vào giỏ</span>
             </button>
-          </div>
+          </div> */}
         </>
       </div>
 
@@ -124,11 +124,6 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
                 )
               )}
             </span>
-            {product.discount !== "0" && (
-              <span className="text-[14px] lg:text-[14px] text-gray-500 line-through">
-                {HELPER.formatVND(product.product_option[0].price)}
-              </span>
-            )}
           </div>
         </div>
 

@@ -79,7 +79,7 @@ const Banner1WithImages: React.FC = () => {
     <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-0 py-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Left Banner - Interior Home Decor */}
-        <div className="bg-white overflow-hidden">
+        <div className="bg-white overflow-hidden rounded-tl-3xl rounded-tr-3xl">
           <div className="relative h-80">
             <Image
               src={IMAGES.BANNER_9}
@@ -98,7 +98,7 @@ const Banner1WithImages: React.FC = () => {
         </div>
 
         {/* Right Banner - Pendant Lamp */}
-        <div className="bg-white overflow-hidden">
+        <div className="bg-white overflow-hidden rounded-bl-3xl rounded-br-3xl">
           <div className="relative h-80">
             <Image
               src={IMAGES.BANNER_3}

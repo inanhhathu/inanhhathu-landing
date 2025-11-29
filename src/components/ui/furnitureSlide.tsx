@@ -93,7 +93,7 @@ const FurnitureSlider: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[390px] lg:h-[816px] bg-gray-50 overflow-hidden">
+    <div className="relative w-full h-[390px] lg:h-[816px] bg-gray-50 overflow-hidden rounded-3xl">
       {/* Slider Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (

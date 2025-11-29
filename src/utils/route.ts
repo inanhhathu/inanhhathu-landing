@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = {
   TIKTOK: "https://www.tiktok.com/@inanhhathu",
   ZALO: "https://zalo.me/3400019649192582536",
   PHONE: "tel:0939752966",
-  SHOPPE: "https://shopee.vn/shop/1620066796",
+  SHOPPE: "https://shopee.vn/inanhhathu",
   YOUTUBE: "#",
   EMAIL: "mailto:inanhhathu@gmail.com",
   DOWNLOAD_ANDROID: "#",

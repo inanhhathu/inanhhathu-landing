@@ -17,8 +17,8 @@ interface BlogPost {
 const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   return (
     <div className="w-full lg:px-3 flex-shrink-0">
-      <Link
-        href={`/blog`}
+      <div
+        // href={`/blog`}
         className="bg-white rounded-lg overflow-hidden duration-300 group"
       >
         <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
@@ -42,7 +42,7 @@ const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
             </span>
           </div>
           <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-gray-700 transition-colors">
-            <Link href={`/blog/${post.title}`}>{post.title}</Link>
+            {post.title}
           </h3>
           <p className="text-gray-600 text-sm line-clamp-3 leading-relaxed mb-4">
             {post.excerpt}
@@ -52,7 +52,7 @@ const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };

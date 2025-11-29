@@ -27,13 +27,13 @@ const FeatureCard: React.FC<FeatureProps> = ({
         <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
       </div>
       <button
-        onClick={() => {
-          toast({
-            variant: "default",
-            title: "Thông báo",
-            description: "Chức năng đang được phát triển.",
-          });
-        }}
+        // onClick={() => {
+        //   toast({
+        //     variant: "default",
+        //     title: "Thông báo",
+        //     description: "Chức năng đang được phát triển.",
+        //   });
+        // }}
         className="text-sm flex items-center justify-center mx-auto text-gray-700 hover:text-[rgb(var(--fifteenth-rgb))] font-bold transition-colors group"
       >
         {linkText}
