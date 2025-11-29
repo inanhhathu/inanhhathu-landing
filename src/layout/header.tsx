@@ -487,20 +487,20 @@ const Header: React.FC<HeaderProps> = ({
               </div>
             ) : (
               <div>
-                <LoginForm onLogin={handleLogin} />
+                {/* <LoginForm onLogin={handleLogin} /> */}
               </div>
             )}
 
-            <Link href={`${ROUTES.CREATE_ORDER}?type=frame`}>
+            {/* <Link href={`${ROUTES.CREATE_ORDER}?type=frame`}>
               <ShoppingBag
                 size={18}
                 strokeWidth={1.5}
                 className="hidden lg:flex cursor-pointer hover:text-[rgb(var(--fifteenth-rgb))]"
               />
-            </Link>
+            </Link> */}
 
             {/* Divider */}
-            <div className="hidden lg:flex h-5 w-px bg-gray-300"></div>
+            {/* <div className="hidden lg:flex h-5 w-px bg-gray-300"></div> */}
 
             {/* Cart */}
             {/* <Link

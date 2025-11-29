@@ -601,10 +601,13 @@ const Section1: React.FC = () => {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-0 lg:gap-3 w-full lg:w-[70%]">
                   <button
+                    // onClick={() => {
+                    //   router.push(
+                    //     `/tao-don-hang?type=frame&product=${product?._id}`
+                    //   );
+                    // }}
                     onClick={() => {
-                      router.push(
-                        `/tao-don-hang?type=frame&product=${product?._id}`
-                      );
+                      router.push(`${SOCIAL_LINKS.ZALO}`);
                     }}
                     className="mt-3 w-full lg:w-1/3 flex-1 bg-[rgb(var(--fifteenth-rgb))] text-[rgb(var(--primary-rgb))] hover:opacity-90 py-3 px-6 rounded-md transition-colors"
                   >
